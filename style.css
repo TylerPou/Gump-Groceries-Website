@@ -42,3 +42,11 @@ a { /*affects links*/
   text-decoration: none;
   color:#009E45;
 }
+
+.footerText {
+  padding-left: 5vw
+}
+
+.footerImage {
+  padding-left: 1vw
+}
