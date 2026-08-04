@@ -27,10 +27,11 @@ ul li h2 { /*affects the text in the navbar*/
   color: #009E45;
   font-family: "aktiv-grotesk-thin";
   line-height: 35px; /*this is to re-add the line height lost in ul li*/
+  font-size: 25px;
 }
 
 .line { /*affects the lines that go across the screen*/
-  height: 3px;
+  height: 3px; /*sets line height*/
   background-color: #009E45;
 }
 
@@ -39,14 +40,83 @@ h1 { /*affects the header text*/
 }
 
 a { /*affects links*/
-  text-decoration: none;
+  text-decoration: none; /*removes underlines*/
   color:#009E45;
 }
 
-.footerText {
-  padding-left: 5vw
+.footerText { /*affects the text in the footer*/
+  padding-left: 5vw /*spaces the text evenly*/
 }
 
-.footerImage {
-  padding-left: 1vw
+.footerImage { /*affects the images in the footer*/
+  padding-left: 1vw /*spaces the images evenly*/
+}
+
+.banner { /*affects the banner*/
+  height: 60vh;
+  background-image: url("Images/BannerImage.png"); /*adds the banner image to the background*/
+  background-size: 100%; /*sets the banner image to not repeat*/
+  display: flex; /*allows text to be in the center of the banner*/
+  align-items: center;
+  justify-content: center;
+}
+
+h1 { /*affects header text*/
+  font-family: "aktiv-grotesk"; /*sets the font to Aktiv Grotesk*/
+  color:#7EDF77;
+  font-size: 100px;
+}
+
+.blueLinks a{ /*affects links intended to be blue */
+  color: #0ec0df;
+  font-family: Arial, Helvetica, sans-serif; /*sets font to Arial*/
+  font-size: 25px;
+}
+a:hover { /*affects links when they are hovered over*/
+  text-decoration: underline; /*adds an underline to links when they are hovered over*/
+}
+
+.centerClass { /*affects places where things should be centred*/
+  text-align: center;
+}
+
+.welcomeMessage { /*affects the welcome message*/
+  margin: 5vh 10vw; /*pushes it away from the sides of the screen and other divs*/
+  background-image: url("Images/WelcomeImage.png"); /*adds a background image*/
+  background-size: 100%; /*stops the background image from repeating*/
+  height: 30vh;
+  border-radius: 10vh; /*rounds the edges of the message*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcomeMessage h1 {
+  font-size: 4vw;
+  color: #00071f;
+  text-shadow: /*gives the text a drop shadow around and underneath it*/
+    0px 2px #EFFFC9,
+    2px 2px #EFFFC9,
+    2px 0px #EFFFC9,
+    0px -2px #EFFFC9,
+    -2px -2px #EFFFC9,
+    -2px 0px #EFFFC9,
+    -2px 2px #EFFFC9,
+    2px -2px #EFFFC9,
+    -5px 5px #EFFFC9;
+}
+
+h2 { /*adjusts secondary headers*/
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#004926;
+  font-size: 40px;
+}
+
+p { /*affects paragraph text*/
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#009E45;
+  padding: 0 15vw; /*pushes the text off the sides of the screen*/
+  font-size: 15px;
 }
