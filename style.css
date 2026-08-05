@@ -26,12 +26,12 @@ ul li { /*affects the elements in the navbar*/
 ul li h2 { /*affects the text in the navbar*/
   color: #009E45;
   font-family: "aktiv-grotesk-thin";
-  line-height: 35px; /*this is to re-add the line height lost in ul li*/
-  font-size: 25px;
+  line-height: 5vh; /*this is to re-add the line height lost in ul li*/
+  font-size: 3vh;
 }
 
 .line { /*affects the lines that go across the screen*/
-  height: 3px; /*sets line height*/
+  height: 0.5vh; /*sets line height*/
   background-color: #009E45;
 }
 
@@ -119,4 +119,27 @@ p { /*affects paragraph text*/
   color:#009E45;
   padding: 0 15vw; /*pushes the text off the sides of the screen*/
   font-size: 15px;
+}
+
+.mission { /*affects the mission section of the home page*/
+  margin: 0 15vw;
+  display: grid; /*sets the section to a grid*/
+  grid-template-columns: auto auto auto; /*sets 3 squares per row*/
+  height: 90vh;
+  
+}
+
+.missionSquare { /*affects the individual squares in the mission*/
+  height: 20vw;
+  width: 20vw;
+  margin: auto; /*centres the images*/
+  background-size: 100%;
+  border-radius: 5vh; /*rounds the corners of the images*/
+}
+
+h3 { /*affects minor text*/
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#EFFFC9;
+  font-size: 3vh;
 }
