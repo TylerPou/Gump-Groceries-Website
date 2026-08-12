@@ -23,6 +23,7 @@ ul li { /*affects the elements in the navbar*/
   justify-content: center; /*centres horizontally*/
   line-height: 0; /*for some reason the image links assume that there is text and so include line height, this is here to remove that*/
 }
+
 ul li h2 { /*affects the text in the navbar*/
   color: #009E45;
   font-family: "aktiv-grotesk-thin";
@@ -33,10 +34,6 @@ ul li h2 { /*affects the text in the navbar*/
 .line { /*affects the lines that go across the screen*/
   height: 0.5vh; /*sets line height*/
   background-color: #009E45;
-}
-
-h1 { /*affects the header text*/
-  margin: 0;
 }
 
 a { /*affects links*/
@@ -57,14 +54,24 @@ a { /*affects links*/
   background-image: url("Images/BannerImage.png"); /*adds the banner image to the background*/
   background-size: 100%; /*sets the banner image to not repeat*/
   display: flex; /*allows text to be in the center of the banner*/
-  align-items: center;
-  justify-content: center;
+  align-items: center; /*centres text*/
+  justify-content: center; /*centres text*/
 }
 
 h1 { /*affects header text*/
   font-family: "aktiv-grotesk"; /*sets the font to Aktiv Grotesk*/
-  color:#7EDF77;
   font-size: 100px;
+  margin: 0;
+  color:#004926;
+  text-align: center;
+}
+
+.centerClass h1 { /*affects text in the home page header*/
+  color:#7EDF77;
+}
+
+.blueLinks { /*affects links intended to be blue's bounding box*/
+  text-align: center;
 }
 
 .blueLinks a{ /*affects links intended to be blue */
@@ -95,7 +102,7 @@ a:hover { /*affects links when they are hovered over*/
   font-size: 4vw;
   color: #00071f;
   text-shadow: /*gives the text a drop shadow around and underneath it*/
-    0px 2px #EFFFC9,
+    0px 2px #EFFFC9, /*adds a drop shadow 2 left and 2 down*/
     2px 2px #EFFFC9,
     2px 0px #EFFFC9,
     0px -2px #EFFFC9,
@@ -122,13 +129,13 @@ p { /*affects paragraph text*/
 }
 
 .mission { /*affects the mission section of the home page*/
-  margin: 0 15vw;
+  margin: 0 15vw; /*removes vertical margin*/
   display: grid; /*sets the section to a grid*/
   grid-template-columns: auto auto auto; /*sets 3 squares per row*/
   height: 90vh;
 }
 
-.mission h3 {
+.mission h3 { /*affects the text in the mission section of the home page*/
   color:#EFFFC9;
 }
 
@@ -147,54 +154,77 @@ h3 { /*affects minor text*/
   font-size: 3vh;
 }
 
-.scrollSection {
-  overflow: auto;
-  white-space: nowrap;
+.scrollSection { /*affects section where you can scroll*/
+  overflow: auto; /*stops page from expanding rightwards*/
+  white-space: nowrap; /*stops new lines from forming*/
 }
 
-.storesSquare img {
+.storesSquare img { /*affects images in the stores section*/
   height: 30vh;
   width: 30vh;
   margin: 1.5vh;
-  border-radius: 5vh;
+  border-radius: 5vh; /*rounds the corners*/
 }
 
-.storesSquare h3 {
+.storesSquare h3 { /*affects the text in the stores section*/
   margin: 0;
 }
 
-.storesSquare {
-  display: inline-block;
+.storesSquare { /*affects the individual stores in the stores section*/
+  display: inline-block; /*lets them stack sideways*/
 }
 
-.product {
+.product { /*affects a product*/
   width: 25vh;
   text-align: center;
   margin: 3vh;
-  display: inline-block;
+  display: inline-block; /*lets them stack sideways*/
 }
 
-.productImage img{
+.productImage img{ /*affects the photo of the product*/
   width: 25vh;
   height: 25vh;
-  outline-style: solid;
-  outline-color: #009E45;
+  outline-style: solid; /*adds an outline*/
+  outline-color: #009E45; /*makes the outline color green*/
   outline-width: 0.5vh;
   border-radius: 2vh;
   background:white;
 }
 
-.productBottom img {
+.productBottom img { /*affects the cart on products*/
   width: 6vh;
   float: right;
   padding: 0 2vh;
 }
 
-.productBottom h3 {
+.productBottom h3 { /*affects the price text on a product*/
   padding: 0 2vh;
   float: left;
 }
 
 .product h3 {
   margin: 2vh 0;
+}
+
+.productText h2 {
+  margin: 0;
+}
+
+.faqAnswer img {
+  height: 20vw;
+  width: 20vw;
+  float: left;
+  border-radius: 3vh;
+}
+
+.faqAnswer p {
+  float: left;
+  padding: 0 0 0 5vw;
+  width: 40vw;
+  text-align: left;
+}
+
+.faqAnswer {
+  overflow: hidden;
+  padding: 0 15vw;
 }
