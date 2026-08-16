@@ -202,29 +202,89 @@ h3 { /*affects minor text*/
   float: left;
 }
 
-.product h3 {
+.product h3 { /*affects the name and price text of a product*/
   margin: 2vh 0;
 }
 
-.productText h2 {
+.productText h2 { /*affects the title of a scrollbar of products*/
   margin: 0;
 }
 
-.faqAnswer img {
+.faqAnswer img { /*affects the images in the faq*/
   height: 20vw;
   width: 20vw;
   float: left;
   border-radius: 3vh;
 }
 
-.faqAnswer p {
+.faqAnswer p { /*affects the paragraph text in the faq*/
   float: left;
-  padding: 0 0 0 5vw;
+  padding: 0 0 0 5vw; /*adds padding to the left to seperate it from the image*/
   width: 40vw;
   text-align: left;
 }
 
-.faqAnswer {
-  overflow: hidden;
+.faqAnswer { /*affects each answer in the faq*/
+  overflow: hidden; /*lets each asnwer stack vertically*/
   padding: 0 15vw;
+}
+
+.contactWelcome { /*affects the welcome message*/
+  margin: 5vh 25vw; /*pushes it away from the sides of the screen and other divs*/
+  background-image: url("Images/contactWelcome.png"); /*adds a background image*/
+  background-size: 100%; /*stops the background image from repeating*/
+  height: 40vh;
+  border-radius: 10vh; /*rounds the edges of the message*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactWelcome h1 { /*affects the welcome text in the contact section*/
+  font-size: 4vw;
+  color:#7EDF77;
+}
+
+.contactLinks { /*affects the whole contact links section*/
+  display: grid; /*sets the section to a grid*/
+  grid-template-columns: auto auto; /*sets 3 squares per row*/
+  text-align: center;
+  margin: 0 25vw;
+  font-family: "aktiv-grotesk";
+}
+
+.contactLinkSection { /*affects the individual name link pairs*/ 
+  padding: 4vh 0;
+}
+
+.contactLinks h2 { /*affects the title of each link*/
+  margin: 0;
+}
+
+.contactLinks p { /*affects the non-links in the link section*/
+  padding: 0;
+  margin: 0;
+}
+
+.contactMap { /*affects the map section*/
+  text-align: center;
+  padding: 5vh;
+}
+
+.contactMap img { /*affects the map itself*/
+  border-radius: 5vh;
+}
+
+form { /*affects the form on the contact page*/
+  text-align: center;
+  margin: auto; /*centers the form*/
+}
+
+input {
+  width: 55vw;
+}
+
+textarea {
+  width: 55vw;
+  height: 20vh;
 }
