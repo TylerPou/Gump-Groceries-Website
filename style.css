@@ -204,6 +204,7 @@ h3 { /*affects minor text*/
 
 .product h3 { /*affects the name and price text of a product*/
   margin: 2vh 0;
+  font-size: 2.5vh;
 }
 
 .productText h2 { /*affects the title of a scrollbar of products*/
@@ -230,7 +231,7 @@ h3 { /*affects minor text*/
 }
 
 .contactWelcome { /*affects the welcome message*/
-  margin: 5vh 25vw; /*pushes it away from the sides of the screen and other divs*/
+  margin: 0vh 25vw 5vh 25vw; /*pushes it away from the sides of the screen and other divs*/
   background-image: url("Images/contactWelcome.png"); /*adds a background image*/
   background-size: 100%; /*stops the background image from repeating*/
   height: 40vh;
@@ -280,11 +281,25 @@ form { /*affects the form on the contact page*/
   margin: auto; /*centers the form*/
 }
 
-input {
+input { /*affects the name, email, and submit buttons*/
   width: 55vw;
 }
 
-textarea {
+textarea { /*affects the message button*/
   width: 55vw;
   height: 20vh;
+}
+
+.contents { /*affects the non header and footer parts of a page*/
+  animation: /*sets an animation to run*/
+  1s /*sets the animation to take 1 second*/
+  ease  /*sets the animation to ease in*/
+  0s /*sets the delay to 0 seconds*/
+  1 /*sets the animation to run once*/
+  running opacityEnter; /*sets the specific animation to be "opacityEnter"*/
+}
+
+@keyframes opacityEnter { /*creates the animation "opacityEnter*/
+  from {opacity: 0; margin-top:20vh;} /*sets the contents to start clear and 20vh down*/
+  to {opacity: 1; margin-top: 0vh;} /*sets the contents to end opaque and at the normal height*/
 }
