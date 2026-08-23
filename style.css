@@ -60,7 +60,7 @@ a { /*affects links*/
 
 h1 { /*affects header text*/
   font-family: "aktiv-grotesk"; /*sets the font to Aktiv Grotesk*/
-  font-size: 100px;
+  font-size: 8vw;
   margin: 0;
   color:#004926;
   text-align: center;
@@ -204,7 +204,7 @@ h3 { /*affects minor text*/
 
 .product h3 { /*affects the name and price text of a product*/
   margin: 2vh 0;
-  font-size: 2.5vh;
+  font-size: 2.2vh;
 }
 
 .productText h2 { /*affects the title of a scrollbar of products*/
@@ -297,6 +297,33 @@ textarea { /*affects the message button*/
   0s /*sets the delay to 0 seconds*/
   1 /*sets the animation to run once*/
   running opacityEnter; /*sets the specific animation to be "opacityEnter"*/
+}
+
+.unorderedContents { /*affects the contents of the unordered shopping page*/
+  padding: 5vh;
+}
+
+.unorderedProducts { /*affects the grid that organizes the products on the unordered shopping page*/
+  display: flex;
+  flex-wrap: wrap; /*lets the products loop over onto new lines*/
+  justify-content: space-between; /*spreads the products evenly*/
+}
+
+.unorderedHeader { /*affects the header of the unordered shopping page*/
+  display: flex;
+  align-items: center; /*sets the height of the arrow to the same as the header text*/
+}
+
+.unorderedHeader a { /*affects the arrow in the unordered shopping page's header*/
+  width: 20vw;
+}
+
+.unorderedHeader h1 { /*affects the header text in the unordered shopping page's header*/
+  width: 60vw;
+}
+
+.headerSpacing { /*affects the blank space in the unordered shopping page's header*/
+  width: 20vw;
 }
 
 @keyframes opacityEnter { /*creates the animation "opacityEnter*/
