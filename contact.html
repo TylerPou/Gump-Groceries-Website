@@ -24,8 +24,7 @@
                 <a href="faq.html">FAQ</a>
             </h2>
         </li>
-        <li> <!-- search bar -->
-            <h2>Search Bar (to be finished)</h2>
+        <li>
         </li>
         <li> <!-- cart -->
             <a href="cart.html">
@@ -77,11 +76,11 @@
         </div>
         <div class="line"></div>
         <h2>Fill out this form to contact us!</h2>
-        <form> <!-- creates the form -->
+        <form action="https://formspree.io/f/xjyvbqzb" method="POST"> <!-- creates the form -->
             <p>Name</p>
-            <input type="text"> <!-- creates the name input section -->
+            <input type="text" name="Name" placeholder="Full Name" autocomplete="off" required> <!-- creates the name input section -->
             <p>Email Address</p>
-            <input type="email"> <!-- creates the email input section -->
+            <input type="email" name="Email" placeholder="Email Address" autocomplete="off" required> <!-- creates the email input section -->
             <p>Message</p>
             <textarea></textarea> <!-- creates the message input section -->
             <br><br>

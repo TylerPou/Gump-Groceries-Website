@@ -60,7 +60,7 @@ a { /*affects links*/
 
 h1 { /*affects header text*/
   font-family: "aktiv-grotesk"; /*sets the font to Aktiv Grotesk*/
-  font-size: 8vw;
+  font-size: 6.5vw;
   margin: 0;
   color:#004926;
   text-align: center;
@@ -283,11 +283,13 @@ form { /*affects the form on the contact page*/
 
 input { /*affects the name, email, and submit buttons*/
   width: 55vw;
+  font-family: "aktiv-grotesk"; /*sets the font to Aktiv Grotesk*/
 }
 
 textarea { /*affects the message button*/
   width: 55vw;
   height: 20vh;
+  font-family: "aktiv-grotesk"; /*sets the font to Aktiv Grotesk*/
 }
 
 .contents { /*affects the non header and footer parts of a page*/
