@@ -31,6 +31,10 @@ ul li h2 { /*affects the text in the navbar*/
   font-size: 3vh;
 }
 
+ul li a img { /*affects the images in the navbar*/
+  height: 10vh;
+}
+
 .line { /*affects the lines that go across the screen*/
   height: 0.5vh; /*sets line height*/
   background-color: #009E45;
@@ -39,6 +43,11 @@ ul li h2 { /*affects the text in the navbar*/
 a { /*affects links*/
   text-decoration: none; /*removes underlines*/
   color:#009E45;
+  font-size: 1.5vw;
+}
+
+.contactLinks a { /*affects the links on the contact page*/
+  font-size: 1vw;
 }
 
 .footerText { /*affects the text in the footer*/
@@ -77,10 +86,10 @@ h1 { /*affects header text*/
 .blueLinks a{ /*affects links intended to be blue */
   color: #0ec0df;
   font-family: Arial, Helvetica, sans-serif; /*sets font to Arial*/
-  font-size: 25px;
 }
 a:hover { /*affects links when they are hovered over*/
   text-decoration: underline; /*adds an underline to links when they are hovered over*/
+  color: #7EDF77; /*changes the colour of the links to be lighter when hovered over*/
 }
 
 .centerClass { /*affects places where things should be centred*/
@@ -102,22 +111,18 @@ a:hover { /*affects links when they are hovered over*/
   font-size: 4vw;
   color: #00071f;
   text-shadow: /*gives the text a drop shadow around and underneath it*/
-    0px 2px #EFFFC9, /*adds a drop shadow 2 left and 2 down*/
-    2px 2px #EFFFC9,
-    2px 0px #EFFFC9,
-    0px -2px #EFFFC9,
-    -2px -2px #EFFFC9,
-    -2px 0px #EFFFC9,
-    -2px 2px #EFFFC9,
-    2px -2px #EFFFC9,
-    -5px 5px #EFFFC9;
+    0.1vw 0.1vw #EFFFC9, /*adds a drop shadow 2 left and 2 down*/
+    -0.1vw -0.1vw #EFFFC9,
+    -0.1vw 0.1vw #EFFFC9,
+    0.1vw -0.1vw #EFFFC9,
+    -0.25vw 0.25vw #EFFFC9;
 }
 
 h2 { /*adjusts secondary headers*/
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   color:#004926;
-  font-size: 40px;
+  font-size: 3vw;
 }
 
 p { /*affects paragraph text*/
@@ -125,7 +130,7 @@ p { /*affects paragraph text*/
   font-family: Arial, Helvetica, sans-serif;
   color:#009E45;
   padding: 0 15vw; /*pushes the text off the sides of the screen*/
-  font-size: 15px;
+  font-size: 1vw;
 }
 
 .mission { /*affects the mission section of the home page*/
@@ -268,12 +273,10 @@ h3 { /*affects minor text*/
 }
 
 .contactMap { /*affects the map section*/
-  text-align: center;
   padding: 5vh;
-}
-
-.contactMap img { /*affects the map itself*/
-  border-radius: 5vh;
+  display: grid; /*turns it into a grid*/
+  grid-template-columns: auto; /*makes it so that there is one item per row*/
+  place-items: center; /*puts the map in the middle of the screen*/
 }
 
 form { /*affects the form on the contact page*/
@@ -283,6 +286,7 @@ form { /*affects the form on the contact page*/
 
 input { /*affects the name, email, and submit buttons*/
   width: 55vw;
+  height: 3vh;
   font-family: "aktiv-grotesk"; /*sets the font to Aktiv Grotesk*/
 }
 
@@ -326,6 +330,11 @@ textarea { /*affects the message button*/
 
 .headerSpacing { /*affects the blank space in the unordered shopping page's header*/
   width: 20vw;
+}
+
+#map { /*affects the map itself*/
+  height: 40vw;
+  width: 50vw;
 }
 
 @keyframes opacityEnter { /*creates the animation "opacityEnter*/
