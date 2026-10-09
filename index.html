@@ -10,45 +10,28 @@
 </head>
 <body>
     <!-- navbar -->
-    <ul> 
-        <li> <!-- logo -->
-            <a href="index.html">
-                <img src="Images/GumpGroceriesLogo.png" alt:"Logo">
-            </a>
-        </li>
-            <li> <!-- links -->
-                <h2>
-                    <a href="orderedShop.html">Shop</a>
-                    <br>
-                    <a href="contact.html">Contact Us</a>
-                    <br>
-                    <a href="faq.html">FAQ</a>
-                </h2>
-            </li>
-            <li>
-            </li>
-        <li> <!-- cart -->
-            <a href="cart.html">
-                <img src="Images/Cart.png" alt:"Cart">
-            </a>
-        </li>
-    </ul>
-    <div class = "line"></div>
+    <div class="navbarComputer"> <!-- only applies if screen width > 800 pixels -->
+        <a href="index.html"><img src="Images/GumpGroceriesLogo.png" style="height:5vw"></a>
+        <div></div> <!-- space the logo from the links -->
+        <div></div> <!-- space the logo from the links -->
+        <div></div> <!-- space the logo from the links -->
+        <h2><a href="orderedShop.html">Shop</a></h2>
+        <h2><a href="contact.html">Contact Us</a></h2>
+        <h2><a href="faq.html">FAQ</a></h2>
+        <a href="cart.html"><img src="Images/Cart.png" style="height:4vw"></a>
+    </div>
+    <div class="navbarPhone"> <!-- only applies if screen width < 800 pixels -->
+        <a href="index.html"><img src="Images/GumpGroceriesLogo.png"></a>
+        <a href="orderedshop.html"><img src="Images/Shop.png"></a>
+        <a href="contact.html"><img src="Images/Contact.png"></a>
+        <a href="faq.html"><img src="Images/FAQ.png"></a>
+        <a href="cart.html"><img src="Images/Cart.png"></a>
+    </div>
     <!-- website contents -->
      <div class="contents">
         <div class="banner"> <!-- banner -->
             <div class="centerClass">
-                <h1>
-                    <span style=
-                    " text-shadow: 
-                        0.15vw 0.15vw #00071f,
-                        -0.15vw -0.15vw #00071f,
-                        -0.15vw 0.15vw #00071f,
-                        0.15vw -0.15vw #00071f,
-                        -1vw 1vw #00071f;"> <!-- this CSS adds the dropshadow to the text -->
-                    ALL SEAFOOD 40% OFF!
-                    </span>
-                </h1>
+                <h1>ALL SEAFOOD 40% OFF!</h1>
                 <div class="blueLinks">
                     <a href="orderedShop.html">Click here to find out more</a>
                 </div>
@@ -61,7 +44,7 @@
             </h1>
         </div>
         <div class="line"></div>
-        <h2>We now have stores in...</h2> <!-- stores -->
+        <h2>We have stores in...</h2> <!-- stores -->
         <div class="scrollSection">
             <div class="storesSquare">
                 <h3>Auckland</h3>
@@ -92,7 +75,6 @@
                 <img src="Images/Store7.png" alt: "Kerikeri">
             </div>
         </div>
-        <br><br>
         <div class="line"></div>
         <h2>Our missions</h2> <!-- missions -->
         <div class="mission"> <!-- adds the grid -->
@@ -199,7 +181,7 @@
                 </div>
             </div>
         </div>
-        <br><br>
+        
         <div class="line"></div>
         <h2>Need help?</h2>
         <p>
@@ -212,67 +194,25 @@
     </div>
     <!-- footer -->
     <div class="line"></div>
-    <ul>
-        <li> <!-- logo -->
-            <a href="index.html">
-                <img src="Images/GumpGroceriesLogo.png" alt:"Logo" height="100vh">
-            </a>
-        </li>
-        <li>
-            <div class="footerText">
-                <h2>
-                    <a href="orderedShop.html">Shop</a>
-                </h2>
-            </div>
-            <div class="footerText">
-                <h2>|</h2>
-            </div>
-            <div class="footerText">
-                <h2>
-                    <a href="contact.html">Contact</a>
-                </h2>
-            </div>
-        </li>
-        <li>
-            <div class="footerText">
-                <h2>|</h2>
-            </div>
-            <div class="footerText">
-                <h2>
-                    <a href="faq.html">FAQ</a>
-                </h2>
-            </div>
-            <div class="footerText">
-                <h2>|</h2>
-            </div>
-            <div class="footerText">
-                <h2>
-                    <a href="cart.html">Cart</a>
-                </h2>
-            </div>
-        </li>
-        <li>
-            <div class="footerImage">
-                <a href="https://www.instagram.com/gumpgroceries/">
-                    <img src="Images/InstagramLogo.png" alt:"Instagram" height="50vh">
-                </a>
-            </div>
-            <div class="footerImage">
-                <a href="https://www.youtube.com/@GumpGroceries">
-                    <img src="Images/YoutubeLogo.png" alt:"Youtube" height="50vh">
-                </a>
-            </div>
-            <div class="footerImage">
-                <a href="https://www.linkedin.com/in/gump-groceries-52997a426/">
-                    <img src="Images/LinkedinLogo.png" alt:"Linkedin" height="50vh">
-                </a>
-            </div>
-            <div class="footerImage">
-                <a href="https://letterboxd.com/GumpGroceries/">
-                    <img src="Images/LetterboxdLogo.png" alt:"Letterboxd" height="50vh">
-                </a>
-            </div>
-        </li>
-     </ul>
+    <div class="navbarComputer"> <!-- only applies if screen width > 800 pixels -->
+        <a href="index.html"><img src="Images/GumpGroceriesLogo.png" style="height:5vw"></a>
+        <h2><a href="orderedShop.html">Shop</a></h2>
+        <h2><a href="contact.html">Contact Us</a></h2>
+        <h2><a href="faq.html">FAQ</a></h2>
+        <h2><a href="cart.html">Cart</a></h2>
+        <div class="socialMedia"> <!-- places social media closer to each other -->
+            <a href="https://www.instagram.com/gumpgroceries/"><img src="Images/InstagramLogo.png" style="height:3vw"></a>
+            <a href="https://www.youtube.com/@GumpGroceries"><img src="Images/YoutubeLogo.png" style="height:3vw"></a>
+            <a href="https://www.linkedin.com/in/gump-groceries-52997a426/"><img src="Images/LinkedinLogo.png" style="height:3vw"></a>
+            <a href="https://letterboxd.com/GumpGroceries/"><img src="Images/LetterboxdLogo.png" style="height:3vw"></a>
+        </div>
+    </div>
+    <div class="navbarPhone"> <!-- only applies if screen width < 800 pixels -->
+        <a href="index.html"><img src="Images/GumpGroceriesLogo.png"></a>
+        <a href="https://www.instagram.com/gumpgroceries/"><img src="Images/InstagramLogo.png"></a>
+        <a href="https://www.youtube.com/@GumpGroceries"><img src="Images/YoutubeLogo.png"></a>
+        <a href="https://www.linkedin.com/in/gump-groceries-52997a426/"><img src="Images/LinkedinLogo.png"></a>
+        <a href="https://letterboxd.com/GumpGroceries/"><img src="Images/LetterboxdLogo.png"></a>
+    </div>
 </body>
 </html>

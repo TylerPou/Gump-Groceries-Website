@@ -4,39 +4,8 @@ body { /*affects the entire page*/
   background-color: #EFFFC9;
 }
 
-ul { /*affects the navbar*/
-  margin: 0;
-  list-style-type: none; /*removes bullets*/
-  display: block; /*makes navbar take up entire website width*/
-  overflow: hidden; /*stops other elements from being adjacent to the navbar*/
-  padding: 0;
-  height: 15vh;
-}
-
-ul li { /*affects the elements in the navbar*/
-  float: left; /*makes list items go left to right*/
-  text-align: center; /*puts all list items in the middle of its section*/
-  width: 25%;
-  height: 15vh;
-  display: flex; /*sets all list items as flexboxes so that they can be centred easily*/
-  align-items: center; /*centres vertically*/
-  justify-content: center; /*centres horizontally*/
-  line-height: 0; /*for some reason the image links assume that there is text and so include line height, this is here to remove that*/
-}
-
-ul li h2 { /*affects the text in the navbar*/
-  color: #009E45;
-  font-family: "aktiv-grotesk-thin";
-  line-height: 5vh; /*this is to re-add the line height lost in ul li*/
-  font-size: 3vh;
-}
-
-ul li a img { /*affects the images in the navbar*/
-  height: 10vh;
-}
-
 .line { /*affects the lines that go across the screen*/
-  height: 0.5vh; /*sets line height*/
+  height: 0.2vw; /*sets line height*/
   background-color: #009E45;
 }
 
@@ -59,12 +28,22 @@ a { /*affects links*/
 }
 
 .banner { /*affects the banner*/
-  height: 60vh;
+  height: 30vw;
   background-image: url("Images/BannerImage.png"); /*adds the banner image to the background*/
   background-size: 100%; /*sets the banner image to not repeat*/
+  background-position: center; /*centres the banner image*/
   display: flex; /*allows text to be in the center of the banner*/
   align-items: center; /*centres text*/
   justify-content: center; /*centres text*/
+}
+
+.banner .centerClass h1 { /*affects the header text in the banner*/
+  text-shadow: /*adds the dropshadow to the text*/
+    0.15vw 0.15vw #00071f,
+    -0.15vw -0.15vw #00071f,
+    -0.15vw 0.15vw #00071f,
+    0.15vw -0.15vw #00071f,
+    -0.8vw 0.8vw #00071f; 
 }
 
 h1 { /*affects header text*/
@@ -97,11 +76,11 @@ a:hover { /*affects links when they are hovered over*/
 }
 
 .welcomeMessage { /*affects the welcome message*/
-  margin: 5vh 10vw; /*pushes it away from the sides of the screen and other divs*/
+  margin: 3vw 10vw; /*pushes it away from the sides of the screen and other divs*/
   background-image: url("Images/WelcomeImage.png"); /*adds a background image*/
   background-size: 100%; /*stops the background image from repeating*/
-  height: 30vh;
-  border-radius: 10vh; /*rounds the edges of the message*/
+  height: 20vw;
+  border-radius: 10vw; /*rounds the edges of the message*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,7 +90,7 @@ a:hover { /*affects links when they are hovered over*/
   font-size: 4vw;
   color: #00071f;
   text-shadow: /*gives the text a drop shadow around and underneath it*/
-    0.1vw 0.1vw #EFFFC9, /*adds a drop shadow 2 left and 2 down*/
+    0.1vw 0.1vw #EFFFC9,
     -0.1vw -0.1vw #EFFFC9,
     -0.1vw 0.1vw #EFFFC9,
     0.1vw -0.1vw #EFFFC9,
@@ -137,7 +116,7 @@ p { /*affects paragraph text*/
   margin: 0 15vw; /*removes vertical margin*/
   display: grid; /*sets the section to a grid*/
   grid-template-columns: auto auto auto; /*sets 3 squares per row*/
-  height: 90vh;
+  height: 50vw;
 }
 
 .mission h3 { /*affects the text in the mission section of the home page*/
@@ -149,14 +128,14 @@ p { /*affects paragraph text*/
   width: 20vw;
   margin: auto; /*centres the images*/
   background-size: 100%;
-  border-radius: 5vh; /*rounds the corners of the images*/
+  border-radius: 2.5vw; /*rounds the corners of the images*/
 }
 
 h3 { /*affects minor text*/
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   color: #009E45;
-  font-size: 3vh;
+  font-size: 1.6vw;
 }
 
 .scrollSection { /*affects section where you can scroll*/
@@ -165,10 +144,10 @@ h3 { /*affects minor text*/
 }
 
 .storesSquare img { /*affects images in the stores section*/
-  height: 30vh;
-  width: 30vh;
-  margin: 1.5vh;
-  border-radius: 5vh; /*rounds the corners*/
+  height: 16vw;
+  width: 16vw;
+  margin: 1vw;
+  border-radius: 2.7vw; /*rounds the corners*/
 }
 
 .storesSquare h3 { /*affects the text in the stores section*/
@@ -180,36 +159,36 @@ h3 { /*affects minor text*/
 }
 
 .product { /*affects a product*/
-  width: 25vh;
+  width: 14vw;
   text-align: center;
-  margin: 3vh;
+  margin: 1.6vw;
   display: inline-block; /*lets them stack sideways*/
 }
 
 .productImage img{ /*affects the photo of the product*/
-  width: 25vh;
-  height: 25vh;
+  width: 14vw;
+  height: 14vw;
   outline-style: solid; /*adds an outline*/
   outline-color: #009E45; /*makes the outline color green*/
-  outline-width: 0.5vh;
-  border-radius: 2vh;
+  outline-width: 0.3vw;
+  border-radius: 1.1vw;
   background:white;
 }
 
 .productBottom img { /*affects the cart on products*/
-  width: 6vh;
+  width: 3.3vw;
   float: right;
-  padding: 0 2vh;
+  padding: 0 1vw;
 }
 
 .productBottom h3 { /*affects the price text on a product*/
-  padding: 0 2vh;
+  padding: 0 1vw;
   float: left;
 }
 
 .product h3 { /*affects the name and price text of a product*/
-  margin: 2vh 0;
-  font-size: 2.2vh;
+  margin: 1.1vw 0;
+  font-size: 1.2vw;
 }
 
 .productText h2 { /*affects the title of a scrollbar of products*/
@@ -218,9 +197,8 @@ h3 { /*affects minor text*/
 
 .faqAnswer img { /*affects the images in the faq*/
   height: 20vw;
-  width: 20vw;
   float: left;
-  border-radius: 3vh;
+  border-radius: 1.6vw;
 }
 
 .faqAnswer p { /*affects the paragraph text in the faq*/
@@ -236,11 +214,11 @@ h3 { /*affects minor text*/
 }
 
 .contactWelcome { /*affects the welcome message*/
-  margin: 0vh 25vw 5vh 25vw; /*pushes it away from the sides of the screen and other divs*/
+  margin: 0 25vw 3vw 25vw; /*pushes it away from the sides of the screen and other divs*/
   background-image: url("Images/contactWelcome.png"); /*adds a background image*/
   background-size: 100%; /*stops the background image from repeating*/
-  height: 40vh;
-  border-radius: 10vh; /*rounds the edges of the message*/
+  height: 21vw;
+  border-radius: 5vw; /*rounds the edges of the message*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -252,15 +230,18 @@ h3 { /*affects minor text*/
 }
 
 .contactLinks { /*affects the whole contact links section*/
-  display: grid; /*sets the section to a grid*/
-  grid-template-columns: auto auto; /*sets 3 squares per row*/
+  display: flex;
+  flex-wrap: wrap; /*lets the products loop over onto new lines*/
+  justify-content: space-between; /*spreads the products evenly*/
+  width: 60vw;
   text-align: center;
-  margin: 0 25vw;
   font-family: "aktiv-grotesk";
+  margin: 5vw 20vw 0 20vw;
 }
 
 .contactLinkSection { /*affects the individual name link pairs*/ 
-  padding: 4vh 0;
+  height: 10vw;
+  width: 30vw;
 }
 
 .contactLinks h2 { /*affects the title of each link*/
@@ -273,7 +254,7 @@ h3 { /*affects minor text*/
 }
 
 .contactMap { /*affects the map section*/
-  padding: 5vh;
+  padding: 2.6vw;
   display: grid; /*turns it into a grid*/
   grid-template-columns: auto; /*makes it so that there is one item per row*/
   place-items: center; /*puts the map in the middle of the screen*/
@@ -286,13 +267,13 @@ form { /*affects the form on the contact page*/
 
 input { /*affects the name, email, and submit buttons*/
   width: 55vw;
-  height: 3vh;
+  height: 1.6vw;
   font-family: "aktiv-grotesk"; /*sets the font to Aktiv Grotesk*/
 }
 
 textarea { /*affects the message button*/
   width: 55vw;
-  height: 20vh;
+  height: 11vw;
   font-family: "aktiv-grotesk"; /*sets the font to Aktiv Grotesk*/
 }
 
@@ -306,7 +287,7 @@ textarea { /*affects the message button*/
 }
 
 .unorderedContents { /*affects the contents of the unordered shopping page*/
-  padding: 5vh;
+  padding: 2.7vw;
 }
 
 .unorderedProducts { /*affects the grid that organizes the products on the unordered shopping page*/
@@ -337,7 +318,226 @@ textarea { /*affects the message button*/
   width: 50vw;
 }
 
+textarea { /*affects the text input section in the form*/
+  resize: none; /*makes it so that you can't resize the form*/
+}
+
+.navbarComputer { /*affects the navbar on computer*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5vw 3vw;
+}
+
+.navbarComputer h2 { /*affects the header text in the navbar*/
+  color: #009E45;
+  font-family: "aktiv-grotesk-thin";
+  font-size: 1.6vw;
+}
+
+.navbarPhone img{ /*removes the phone images when on computer*/
+  height: 0;
+}
+
+.navbarPhone { /*removes the phone navbar when on computer*/
+  height: 0;
+}
+
+.socialMedia { /*affects the social media icons in the footer on computer*/
+  display: flex;
+  width: 13vw;
+  justify-content: space-between; /*spaces the icons evenly*/
+}
+
+@media screen and (width <= 800px) { /*these only apply if the screen is less than 800 pixels wide*/
+  .mission { /*affects the mission section of the home page*/
+  margin: 0;
+  grid-template-columns: auto auto; /*sets 2 squares per row*/
+  height: 150vw;
+  }
+
+  .missionSquare { /*affects the individual squares in the mission*/
+  height: 42vw;
+  width: 42vw;
+  background-size: 100%;
+  border-radius: 5vw; /*rounds the corners of the images*/
+  margin: 3vw;
+  }
+
+  h1 { /*affects header text*/
+    font-size: 15vw;
+  }
+
+  .welcomeMessage h1 { /*affects the header text in the welcome message*/
+    font-size: 10vw;
+    text-shadow: /*gives the text a drop shadow around and underneath it*/
+    0.7vw 0.7vw #EFFFC9,
+    -0.7vw -0.7vw #EFFFC9,
+    -0.7vw 0.7vw #EFFFC9,
+    0.7vw -0.7vw #EFFFC9
+  }
+
+  h2 { /*affects subheader text*/
+    font-size: 10vw;
+  }
+
+  h3 { /*affects subsubheader text*/
+    font-size: 4vw !important; /*important so that it overrides computer font sizes*/
+  }
+
+  p { /*affects paragraph text*/
+    font-size: 4vw;
+    padding: 5vw;
+  }
+
+  a { /*affects links*/
+    font-size: 5vw !important; /*important so that it overrides computer font sizes*/
+  }
+
+  .storesSquare img { /*affects the images in the stores section*/
+    width: 50vw;
+    height: 50vw;
+    border-radius: 5vw;
+    margin: 0 3vw;
+  }
+
+  .line { /*affects the lines that run the screen*/
+    height: 1vw;
+    margin: 10vw 0;
+  }
+
+  .banner { /*affects the banner section of the home page*/
+    height: 180vw;
+    background-size: 100%; /*ensures the background doesn't loop*/
+    background-image: url("Images/BannerImagePhone.png"); /*adds the banner image to the background*/
+  }
+
+  .welcomeMessage { /*affects the welcome message on the home page*/
+    height: 80vw;
+    background-size: 300%; /*ensures the background doesn't loop*/
+    margin: 15vw 10vw;
+  }
+
+  .navbarPhone { /*affects the navbar when on phone*/
+    height: 20vw;
+    display: flex;
+    align-items: center; /*puts the icons in the center of the navbar vertically*/
+    justify-content: space-between; /*evenly spreads the icons horizontally*/
+    padding: 0.5vw 3vw;
+  }
+
+  .banner .centerClass h1 { /*affects the header text in the banner*/
+  text-shadow: /*adds the dropshadow to the text*/
+    0.5vw 0.5vw #00071f,
+    -0.5vw -0.5vw #00071f,
+    -0.5vw 0.5vw #00071f,
+    0.5vw -0.5vw #00071f,
+    -1.5vw 1.5vw #00071f; 
+  }
+
+  .product { /*affects individual products*/
+    width: 35vw;
+    margin: 5vw;
+  }
+
+  .productImage img { /*affects the image in a product*/
+    width: 35vw;
+    height: 35vw;
+    outline-width: 1vw;
+    border-radius: 0; /*removes the rounding on the corners*/
+  }
+
+  .productBottom img { /*affects the cart icon in a product*/
+    width: 10vw;
+    padding: 0 2vw;
+  }
+
+  .productBottom h3 { /*affects the price text on a product*/
+  padding: 2vw;
+  margin: 0;
+  }
+
+  .navbarPhone img { /*affects the icons in the navbar*/
+    height: 10vw;
+  }
+
+  .navbarComputer img { /*removes the computer images when on phone*/
+    height: 0 !important;
+  }
+
+  .navbarComputer a { /*removes the computer links when on phone*/
+    font-size: 0 !important;
+  }
+
+  .navbarComputer { /*removes the computer navbar when on phone*/
+    height: 0;
+  }
+
+  .faqAnswer { /*affects each image-answer section in the FAQ page*/
+    display: flex;
+    flex-direction: column; /*sets the image and answer vertically*/
+    align-items: center; /*centers the parts horizontally*/
+  }
+
+  .faqAnswer img { /*affects images in the FAQ page*/
+    float: none; /*stops the image from floating left*/
+    height: 80vw;
+  }
+
+  .faqAnswer p { /*affects text in the FAQ page*/
+    float: none; /*stops the text from floating right*/
+    text-align: center;
+    padding: 0 0 20vw 0; /*adds a gap between questions*/
+    width: 80vw;
+  }
+
+  .unorderedHeader img { /* affects the back button on the unordered page*/
+    height: 0; /*removes the button*/
+  }
+
+  .contactWelcome { /*affects the welcome image on the contact page*/
+    height: 80vw;
+    background-size: 150%; /*ensures the background doesn't loop*/
+    background-position: center; /*centers the background*/
+    margin: 0 10vw 15vw 10vw;
+    border-radius: 5vw;
+  }
+
+  .contactWelcome h1 { /*affects the text on the welcome image in the contact page*/
+    font-size: 10vw;
+  }
+
+  #map { /*affects the map*/
+    width: 80vw;
+    height: 130vw;
+  }
+
+  .contactLinks { /*affects the whole links section on the contact page*/
+    margin: 0 10vw;
+    width: 80vw;
+  }
+
+  .contactLinkSection { /*affects individual links in the links section*/
+    width: 80vw;
+    height: 30vw;
+  }
+
+  input { /*affects the name, email, and submit buttons*/
+    height: 10vw;
+    width: 90vw;
+  }
+
+  textarea { /*affects the area where the user submits a message*/
+    height: 50vw;
+    width: 90vw;
+  }
+
+  form p { /*affects the text in the form*/
+    padding: 0;
+  }
+}
+
 @keyframes opacityEnter { /*creates the animation "opacityEnter*/
-  from {opacity: 0; margin-top:20vh;} /*sets the contents to start clear and 20vh down*/
-  to {opacity: 1; margin-top: 0vh;} /*sets the contents to end opaque and at the normal height*/
+  from {opacity: 0; margin-top:10vw;} /*sets the contents to start clear and 10vw down*/
+  to {opacity: 1; margin-top: 0;} /*sets the contents to end opaque and at the normal height*/
 }
