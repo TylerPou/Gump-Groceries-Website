@@ -6,7 +6,7 @@ body { /*affects the entire page*/
 
 .line { /*affects the lines that go across the screen*/
   height: 0.2vw; /*sets line height*/
-  background-color: #009E45;
+  background-color: #004926;
 }
 
 a { /*affects links*/
@@ -107,7 +107,7 @@ h2 { /*adjusts secondary headers*/
 p { /*affects paragraph text*/
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  color:#009E45;
+  color:#004926;
   padding: 0 15vw; /*pushes the text off the sides of the screen*/
   font-size: 1vw;
 }
@@ -134,7 +134,7 @@ p { /*affects paragraph text*/
 h3 { /*affects minor text*/
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  color: #009E45;
+  color: #004926;
   font-size: 1.6vw;
 }
 
@@ -172,7 +172,7 @@ h3 { /*affects minor text*/
   outline-color: #009E45; /*makes the outline color green*/
   outline-width: 0.3vw;
   border-radius: 1.1vw;
-  background:white;
+  background:#ffffff;
 }
 
 .productBottom img { /*affects the cart on products*/
@@ -226,7 +226,7 @@ h3 { /*affects minor text*/
 
 .contactWelcome h1 { /*affects the welcome text in the contact section*/
   font-size: 4vw;
-  color:#7EDF77;
+  color: #EFFFC9;
 }
 
 .contactLinks { /*affects the whole contact links section*/
@@ -251,6 +251,7 @@ h3 { /*affects minor text*/
 .contactLinks p { /*affects the non-links in the link section*/
   padding: 0;
   margin: 0;
+  color: #009E45;
 }
 
 .contactMap { /*affects the map section*/
@@ -345,7 +346,7 @@ textarea { /*affects the text input section in the form*/
 
 .socialMedia { /*affects the social media icons in the footer on computer*/
   display: flex;
-  width: 13vw;
+  width: 15vw;
   justify-content: space-between; /*spaces the icons evenly*/
 }
 
@@ -458,7 +459,7 @@ textarea { /*affects the text input section in the form*/
   }
 
   .navbarPhone img { /*affects the icons in the navbar*/
-    height: 10vw;
+    height: 14vw;
   }
 
   .navbarComputer img { /*removes the computer images when on phone*/
@@ -467,6 +468,10 @@ textarea { /*affects the text input section in the form*/
 
   .navbarComputer a { /*removes the computer links when on phone*/
     font-size: 0 !important;
+  }
+
+  .navbarComputer h2 {
+    font-size: 0;
   }
 
   .navbarComputer { /*removes the computer navbar when on phone*/
